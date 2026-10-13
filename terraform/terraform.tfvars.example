@@ -1,0 +1,11 @@
+# Copy to terraform.tfvars and fill in before any real plan/apply.
+# terraform.tfvars itself is gitignored — never commit real values.
+
+aws_region  = "us-east-1"
+project_name = "iot-events"
+environment  = "baseline"
+
+app_image = "123456789012.dkr.ecr.us-east-1.amazonaws.com/iot-events:latest"
+
+alert_notification_email = "your-team@example.com"
+grafana_admin_user_arns  = []
