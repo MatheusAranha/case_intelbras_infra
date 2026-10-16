@@ -6,7 +6,9 @@ decisions can be reviewed before any AWS resource is created. All prices are
 **us-east-1, on-demand list price, no committed-use discounts, approximate** —
 gathered from AWS pricing pages and third-party trackers in October 2026, not from
 AWS's own pricing API. Re-verify in the [AWS Pricing Calculator](https://calculator.aws/)
-before treating any number here as a budget commitment.
+before treating any number here as a budget commitment. Every pricing figure's exact
+source, and the full derivation behind §4's capacity numbers, is in
+**[SOURCES.md](SOURCES.md)**.
 
 Frontend, CI/CD pipeline, and multi-region/DR are explicitly out of scope — this
 covers the backend only, matching `case_intelbras_kafka_java`.

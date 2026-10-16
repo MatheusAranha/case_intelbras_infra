@@ -12,7 +12,10 @@ not a running deployment.
 Start with **[PROPOSAL.md](PROPOSAL.md)**: what's being proposed and why, the Mermaid
 architecture diagram, a monthly cost breakdown, an estimated message-throughput capacity
 at that cost (per minute/day/month), and a scaling plan with cost/capacity deltas for
-each lever.
+each lever. **[SOURCES.md](SOURCES.md)** backs every number in it: where each price
+figure came from (official AWS pages vs. third-party trackers, with confidence levels),
+and the full step-by-step derivation of the capacity estimates — including an honest
+accounting of which parts are sourced and which are reasoned judgment calls.
 
 ## Reviewing this without an AWS account
 
@@ -31,6 +34,7 @@ proposal itself.
 
 ```
 PROPOSAL.md           — the actual proposal: architecture, costs, capacity, scaling
+SOURCES.md            — pricing sources and the capacity-estimate methodology
 terraform/
   versions.tf          — providers, backend note (local state; a real deployment uses S3+DynamoDB)
   variables.tf          — every sizing knob, with the baseline tier as the default
